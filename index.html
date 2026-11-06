@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Dental Clinic — Aesthetic & Cosmetic Dentistry, Thane West</title>
+<meta name="description" content="Om Dental Clinic, Thane West — Specialist aesthetic & cosmetic dentistry and painless single-sitting root canals. Call +91 9004079983.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23B91C1C'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>ॐ</text></svg>">
+<style>
+:root{
+  --color-primary:#B91C1C; --color-primary-hover:#991B1B; --color-primary-light:#FEE2E2;
+  --color-clinical-blue:#0284C7; --color-clinical-blue-dark:#0369A1; --color-clinical-blue-surface:#E0F2FE;
+  --color-warm-amber:#F59E0B; --color-warm-amber-surface:#FEF3C7;
+  --color-surface-bg:#F8FAFC; --color-surface-card:#FFFFFF; --color-border:#E2E8F0;
+  --color-text-primary:#0F172A; --color-text-secondary:#475569; --color-text-muted:#64748B;
+  --font-display:"Fraunces",serif; --font-body:"Inter",sans-serif;
+  --radius:18px; --shadow:0 10px 40px -12px rgba(15,23,42,.12);
+  --ease:cubic-bezier(.19,1,.22,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--color-text-primary);background:var(--color-surface-bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin-inline:auto}
+section{padding:clamp(64px,9vw,120px) 0}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.6vw,52px)}
+.center{text-align:center}
+.center .sub{margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-primary);background:var(--color-primary-light);padding:7px 14px;border-radius:999px;margin-bottom:20px}
+.eyebrow.blue{color:var(--color-clinical-blue-dark);background:var(--color-clinical-blue-surface)}
+.sub{color:var(--color-text-secondary);max-width:54ch;margin-top:16px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:16px;transition:.25s var(--ease);cursor:pointer;border:0}
+.btn-primary{background:var(--color-primary);color:#fff;box-shadow:0 8px 24px -8px rgba(185,28,28,.5)}
+.btn-primary:hover{background:var(--color-primary-hover);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--color-primary);border:2px solid var(--color-primary)}
+.btn-outline:hover{background:var(--color-primary-light)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(248,250,252,.8);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-bottom-color:var(--color-border);background:rgba(248,250,252,.92)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-size:24px;font-weight:700;transition:.4s var(--ease)}
+.logo:hover .logo-mark{transform:rotate(-10deg) scale(1.06)}
+.logo-text strong{font-family:var(--font-display);font-size:19px;color:var(--color-primary);display:block;line-height:1.1}
+.logo-text span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted)}
+.nav-links{display:flex;gap:30px;font-weight:500;font-size:15px}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--color-primary);border-radius:2px;transition:width .3s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;gap:12px;align-items:center}
+.nav-cta .btn{padding:11px 22px;font-size:14px}
+@media(max-width:900px){.nav-links{display:none}}
+@media(max-width:560px){.nav-cta .btn-outline{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 500px at 85% -10%, var(--color-warm-amber-surface), transparent 60%),
+  radial-gradient(900px 500px at -10% 110%, var(--color-primary-light), transparent 55%),
+  var(--color-surface-card)}
+.hero-inner{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(72px,10vw,140px) 0 0}
+.hero h1{font-size:clamp(44px,7.2vw,92px);max-width:22ch;line-height:1.08}
+.hero h1 em{font-style:italic;color:var(--color-primary);padding-right:.08em}
+.hero .sub{font-size:clamp(17px,2vw,21px);margin-top:24px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:36px}
+.hero-meta{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;margin-top:44px;padding-top:28px;border-top:1px solid var(--color-border);width:100%}
+.hero-meta div strong{display:block;font-size:22px;font-family:var(--font-display);color:var(--color-text-primary)}
+.hero-meta div span{font-size:13px;color:var(--color-text-muted)}
+.hero-visual{margin-top:64px;width:min(680px,100%);position:relative}
+.tooth-card{background:var(--color-surface-card);border:1px solid var(--color-border);border-radius:28px 28px 0 0;padding:36px;box-shadow:var(--shadow);border-bottom:0}
+.tooth-illo{background:linear-gradient(150deg,var(--color-warm-amber-surface),var(--color-clinical-blue-surface));border-radius:20px;aspect-ratio:16/9;display:grid;place-items:center;overflow:hidden}
+.float-chip{position:absolute;background:#fff;border:1px solid var(--color-border);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center;animation:float 5s ease-in-out infinite}
+.float-chip .dot{width:10px;height:10px;border-radius:50%}
+.chip-1{top:-18px;left:-14px}
+.chip-2{bottom:40px;right:-10px;animation-delay:2.5s}
+.chip-1 .dot{background:#16A34A}.chip-2 .dot{background:var(--color-warm-amber)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* big scroll statement */
+.statement{padding:clamp(90px,14vw,180px) 0}
+.statement h2{font-size:clamp(34px,5.4vw,68px);max-width:24ch;margin-inline:auto;line-height:1.1}
+.statement h2 em{font-style:italic;color:var(--color-clinical-blue);padding-right:.08em}
+
+/* marquee */
+.marquee{background:var(--color-primary);color:#fff;overflow:hidden;padding:16px 0;font-size:15px;font-weight:600;letter-spacing:.05em;transform:rotate(-1.2deg) scale(1.02);margin:20px 0}
+.marquee-track{display:flex;gap:48px;white-space:nowrap;animation:scroll 30s linear infinite;width:max-content}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sticky stacking cards */
+.stacks{display:flex;flex-direction:column;gap:6vh}
+.sticky-card{position:sticky;top:calc(72px + 24px);background:var(--color-surface-card);border:1px solid var(--color-border);border-radius:28px;box-shadow:var(--shadow);padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;min-height:440px}
+.sticky-card .card-visual{border-radius:20px;aspect-ratio:16/11;display:grid;place-items:center;overflow:hidden}
+.sticky-card:nth-of-type(1) .card-visual{background:linear-gradient(150deg,var(--color-warm-amber-surface),#fff)}
+.sticky-card:nth-of-type(2) .card-visual{background:linear-gradient(150deg,var(--color-clinical-blue-surface),#fff)}
+.sticky-card h3{font-size:clamp(26px,3vw,36px)}
+.sticky-card ul{list-style:none;margin-top:18px;display:grid;gap:10px}
+.sticky-card li{display:flex;gap:10px;font-size:15px;color:var(--color-text-secondary)}
+.sticky-card li::before{content:"✓";color:var(--color-clinical-blue);font-weight:700;flex-shrink:0}
+.sticky-card .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-clinical-blue-dark)}
+@media(max-width:820px){.sticky-card{grid-template-columns:1fr;min-height:0}.sticky-card .card-visual{order:-1;aspect-ratio:16/8}}
+
+/* trust */
+.trust{background:var(--color-surface-card)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+@media(max-width:760px){.trust-grid{grid-template-columns:1fr}}
+.t-item{display:flex;gap:16px;align-items:flex-start;padding:28px;border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface-bg);transition:.3s var(--ease)}
+.t-item:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.t-item .n{width:38px;height:38px;border-radius:50%;background:var(--color-primary-light);color:var(--color-primary);font-weight:700;display:grid;place-items:center;flex-shrink:0;font-size:15px}
+.t-item strong{display:block;font-size:16px}
+.t-item p{font-size:14.5px;color:var(--color-text-secondary)}
+
+/* hours */
+.hours-card{background:var(--color-surface-card);border:1px solid var(--color-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:52px;max-width:760px;margin-inline:auto}
+.hours-row{display:grid;grid-template-columns:130px 1fr 1fr;padding:16px 26px;border-bottom:1px solid var(--color-border);align-items:center;font-size:15px}
+.hours-row:last-child{border-bottom:0}
+.hours-row.head{background:var(--color-text-primary);color:#fff;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.hours-row .day{font-weight:600}
+.hours-row.sun{background:var(--color-warm-amber-surface)}
+.badge{display:inline-block;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600}
+.badge-am{background:var(--color-warm-amber-surface);color:#92400E}
+.badge-pm{background:var(--color-clinical-blue-surface);color:var(--color-clinical-blue-dark)}
+@media(max-width:640px){.hours-row{grid-template-columns:100px 1fr;padding:14px 16px}.hours-row .pm{display:none}.hours-row.head .pm{display:none}}
+
+/* contact */
+.contact{background:var(--color-text-primary);color:#fff}
+.contact h2{color:#fff}
+.contact .eyebrow{background:rgba(185,28,28,.25);color:#FECACA}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;margin-top:48px;align-items:start}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.c-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.c-item:last-child{border:0}
+.c-item .ico{width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.08);display:grid;place-items:center;flex-shrink:0}
+.c-item strong{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#94A3B8;margin-bottom:4px}
+.c-item a,.c-item p{font-size:17px;font-weight:500}
+.c-item a:hover{color:var(--color-warm-amber)}
+.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.15);min-height:380px}
+.map-wrap iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* footer */
+footer{background:#0B1220;color:#94A3B8;padding:40px 0;font-size:14px}
+footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+
+/* floating whatsapp */
+.wa{position:fixed;bottom:24px;right:24px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(37,211,102,.6);transition:.25s var(--ease)}
+.wa:hover{transform:scale(1.1) rotate(6deg)}
+
+/* scroll reveal system */
+.js .fade{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .fade.in{opacity:1;transform:none}
+.js .fade-slow{transition-duration:1.4s}
+.js [data-stagger]>*{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js [data-stagger].in>*{opacity:1;transform:none}
+
+/* emergency strip */
+.strip{background:var(--color-warm-amber-surface);border:1px solid #FDE68A;border-radius:14px;padding:16px 22px;display:flex;gap:14px;align-items:center;font-size:14.5px;margin-top:32px;text-align:left}
+.strip strong{color:#92400E}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="container nav">
+    <a class="logo" href="#top">
+      <div class="logo-mark">ॐ</div>
+      <div class="logo-text"><strong>Om Dental Clinic</strong><span>Thane West</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Treatments</a>
+      <a href="#trust">Why Us</a>
+      <a href="#hours">Timings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+919004079983">+91 90040 79983</a>
+      <a class="btn btn-primary" href="https://wa.me/919004079983?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Om%20Dental%20Clinic.">Book Appointment</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO — word-by-word masked reveal -->
+  <section class="hero" style="padding-bottom:0">
+    <div class="container hero-inner">
+      <span class="eyebrow">✦ Specialist Dental Care · Thane West</span>
+      <h1 data-words>A confident smile, crafted with <em>precision</em>.</h1>
+      <p class="sub fade">Specialist aesthetic & cosmetic dentistry and painless single-sitting root canals — gentle, honest, modern dental care.</p>
+      <div class="actions fade fade-slow">
+        <a class="btn btn-primary" href="https://wa.me/919004079983?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Om%20Dental%20Clinic.">Book on WhatsApp →</a>
+        <a class="btn btn-outline" href="tel:+919004079983">Call +91 90040 79983</a>
+      </div>
+      <div class="strip fade fade-slow">🏥 <span><strong>Toothache right now?</strong> Emergency slots available — call <a href="tel:+919004079983" style="font-weight:700;color:var(--color-primary)">+91 90040 79983</a> for same-day relief.</span></div>
+      <div class="hero-meta fade fade-slow">
+        <div><strong>2</strong><span>Specialties</span></div>
+        <div><strong>6 Days</strong><span>Open Weekly</span></div>
+        <div><strong>1 Sitting</strong><span>Root Canal</span></div>
+      </div>
+      <div class="hero-visual fade fade-slow">
+        <div class="tooth-card">
+          <div class="tooth-illo">
+            <svg width="160" height="190" viewBox="0 0 180 210" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#E2E8F0"/>
+                </linearGradient>
+              </defs>
+              <path d="M90 22C60 22 38 40 38 72c0 22 8 38 12 58 4 22 6 44 14 52 8 8 16-6 18-26 2-18 4-34 8-34s6 16 8 34c2 20 10 34 18 26 8-8 10-30 14-52 4-20 12-36 12-58 0-32-22-50-52-50z" fill="url(#tg)" stroke="#CBD5E1" stroke-width="3"/>
+              <path d="M62 52c8-8 18-11 28-11" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+              <circle cx="136" cy="44" r="10" fill="#F59E0B" opacity=".85"/>
+              <circle cx="146" cy="34" r="5" fill="#F59E0B" opacity=".5"/>
+              <path d="M30 168c14 10 34 15 60 15s46-5 60-15" stroke="#0284C7" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+            </svg>
+          </div>
+        </div>
+        <div class="float-chip chip-1"><span class="dot"></span>Painless single-sitting RCT</div>
+        <div class="float-chip chip-2"><span class="dot"></span>Class-B Autoclave sterilization</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>✦ Smile Makeovers</span><span>✦ Ultra-thin Veneers</span><span>✦ Laser Whitening</span><span>✦ Single-Sitting Root Canal</span><span>✦ Invisible Fillings</span><span>✦ Precision Dentistry</span>
+      <span>✦ Smile Makeovers</span><span>✦ Ultra-thin Veneers</span><span>✦ Laser Whitening</span><span>✦ Single-Sitting Root Canal</span><span>✦ Invisible Fillings</span><span>✦ Precision Dentistry</span>
+    </div>
+  </div>
+
+  <!-- BIG SCROLL STATEMENT -->
+  <section class="statement">
+    <div class="container center">
+      <h2 data-words>Specialist care, <em>built around</em> your smile.</h2>
+    </div>
+  </section>
+
+  <!-- STICKY STACKING CARDS -->
+  <section id="services" style="padding-top:0">
+    <div class="container">
+      <div class="center fade">
+        <span class="eyebrow blue">Specialist In</span>
+        <h2>Two specialties.<br>Done properly.</h2>
+      </div>
+      <div class="stacks" style="margin-top:56px">
+        <article class="sticky-card">
+          <div>
+            <div class="tag">Specialty 01</div>
+            <h3 style="margin-top:12px">Aesthetic & Cosmetic Dentistry</h3>
+            <p class="sub">Design the smile you actually want — natural-looking, enamel-preserving, done right the first time.</p>
+            <ul>
+              <li>Smile makeovers & digital smile design</li>
+              <li>Ultra-thin porcelain & ceramic veneers</li>
+              <li>Laser teeth whitening</li>
+              <li>Gap closures & diastema correction</li>
+              <li>Enamel contouring & aesthetic alignment</li>
+            </ul>
+          </div>
+          <div class="card-visual">
+            <svg width="120" height="140" viewBox="0 0 180 210" fill="none" aria-hidden="true"><path d="M90 22C60 22 38 40 38 72c0 22 8 38 12 58 4 22 6 44 14 52 8 8 16-6 18-26 2-18 4-34 8-34s6 16 8 34c2 20 10 34 18 26 8-8 10-30 14-52 4-20 12-36 12-58 0-32-22-50-52-50z" fill="#fff" stroke="#CBD5E1" stroke-width="3"/><path d="M9 9l2 2 4-4" transform="translate(50 40)" stroke="#B91C1C" stroke-width="4" stroke-linecap="round" fill="none"/></svg>
+          </div>
+        </article>
+        <article class="sticky-card">
+          <div>
+            <div class="tag">Specialty 02</div>
+            <h3 style="margin-top:12px">Root Canal Treatment (RCT)</h3>
+            <p class="sub">Modern rotary endodontics with precision apex locators — save the tooth, lose the pain.</p>
+            <ul>
+              <li>Single-sitting pain-free root canal</li>
+              <li>Revision & re-RCT solutions</li>
+              <li>Zirconia, ceramic & PFM crown restorations</li>
+              <li>Emergency relief for acute toothache</li>
+            </ul>
+          </div>
+          <div class="card-visual">
+            <svg width="120" height="140" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/><path d="M12 15v7"/><path d="M9 22h6"/></svg>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANOTHER STATEMENT -->
+  <section class="statement">
+    <div class="container center">
+      <h2 data-words>Dentistry that <em>never hurts</em> — and neither should the bill.</h2>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section id="trust" class="trust">
+    <div class="container">
+      <div class="center fade">
+        <span class="eyebrow">Why Patients Choose Us</span>
+        <h2>Precision care,<br>honest advice.</h2>
+        <p class="sub">Every treatment starts with a detailed radiograph evaluation and a transparent roadmap.</p>
+      </div>
+      <div class="trust-grid" data-stagger>
+        <div class="t-item"><div class="n">1</div><div><strong>Anxiety-free, gentle protocols</strong><p>Gentle local anesthesia techniques — even for nervous patients.</p></div></div>
+        <div class="t-item"><div class="n">2</div><div><strong>Hospital-grade sterilization</strong><p>Class-B Autoclave 4-tier instrument sterilization. Every instrument, every patient.</p></div></div>
+        <div class="t-item"><div class="n">3</div><div><strong>Digital records & transparency</strong><p>Detailed radiograph evaluations and a clear treatment plan before anything begins.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section id="hours">
+    <div class="container">
+      <div class="center fade">
+        <span class="eyebrow">Consultation Timings</span>
+        <h2>Open six days.<br>Morning & evening shifts.</h2>
+        <p class="sub">Double-shift timings built for working professionals. Walk-ins welcome during OPD hours.</p>
+      </div>
+      <div class="hours-card fade">
+        <div class="hours-row head"><div>Day</div><div>Morning</div><div class="pm">Evening</div></div>
+        <div class="hours-row"><div class="day">Mon – Sat</div><div><span class="badge badge-am">10:30 AM – 1:30 PM</span></div><div class="pm"><span class="badge badge-pm">6:00 PM – 9:00 PM</span></div></div>
+        <div class="hours-row sun"><div class="day">Sunday</div><div><span class="badge badge-am">Closed for regular OPD</span></div><div class="pm"><span class="badge badge-pm">Emergencies by appointment</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="fade">
+        <span class="eyebrow">Visit Us</span>
+        <h2>Right off the Nitin Flyover,<br>easy to reach.</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="c-item fade">
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><strong>Address</strong><p>Shop No. 3, Sai Om 'C' CHS Ltd., Louiswadi, Kajuwadi,<br>Thane (West) – 400 604, Maharashtra</p></div>
+          </div>
+          <div class="c-item fade">
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><strong>Call / WhatsApp</strong><p><a href="tel:+919004079983">+91 90040 79983</a></p></div>
+          </div>
+          <div class="c-item fade">
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+            <div><strong>Email</strong><p><a href="mailto:info@omdentalclinic.com">info@omdentalclinic.com</a></p></div>
+          </div>
+          <div class="c-item fade">
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div><strong>Timings</strong><p>Mon–Sat: 10:30 AM – 1:30 PM · 6:00 PM – 9:00 PM<br>Sunday: Emergencies by appointment</p></div>
+          </div>
+        </div>
+        <div class="map-wrap fade">
+          <iframe title="Om Dental Clinic location map" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps?q=Louiswadi%2C%20Kajuwadi%2C%20Thane%20West%20400604&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© <span id="yr"></span> Om Dental Clinic · Specialist Dental Practice · Thane West, Maharashtra</div>
+    <div><a href="tel:+919004079983" style="color:#F59E0B;font-weight:600">+91 90040 79983</a></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919004079983?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Om%20Dental%20Clinic." aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.8 1-1 1.2c-.2.2-.4.2-.7.1-1.5-.7-2.7-1.9-3.4-3.4-.1-.3-.1-.5.1-.7s.9-.8 1-1c.2-.2.2-.5.1-.7-.1-.3-.8-1.7-1-2-.3-.5-.6-.5-.9-.5h-.8c-.3 0-.7.1-1.1.5-.4.4-1.5 1.5-1.5 3.5s1.5 4 1.7 4.2c.2.3 2.9 4.5 7.1 6.2.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script>
+document.documentElement.classList.add('js');
+
+// mask-wrap words for staggered line reveal (wispr-style)
+document.querySelectorAll('[data-words]').forEach(el=>{
+  const walk=node=>{
+    [...node.childNodes].forEach(n=>{
+      if(n.nodeType===3){
+        const frag=document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(t=>{
+          if(!t.trim()){frag.appendChild(document.createTextNode(' '));return}
+          const w=document.createElement('span');w.className='w';w.style.cssText='display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.15em;margin-bottom:-.15em';
+          const s=document.createElement('span');s.textContent=t;s.style.cssText='display:inline-block;transform:translateY(120%);padding-right:.06em';
+          w.appendChild(s);frag.appendChild(w);
+        });
+        node.replaceChild(frag,n);
+      }else if(n.nodeType===1&&!n.classList.contains('w')){walk(n)}
+    });
+  };
+  walk(el);
+});
+
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target;
+    if(el.hasAttribute('data-words')){
+      el.querySelectorAll('.w span').forEach((s,i)=>{s.style.transition=`transform .9s cubic-bezier(.19,1,.22,1) ${i*70}ms`;s.style.transform='none'});
+    }else{
+      el.classList.add('in');
+      if(el.hasAttribute('data-stagger')){
+        [...el.children].forEach((c,i)=>c.style.transitionDelay=`${i*120}ms`);
+      }
+    }
+    io.unobserve(el);
+  });
+},{threshold:.15});
+document.querySelectorAll('[data-words],.fade,[data-stagger]').forEach(el=>io.observe(el));
+
+// header border on scroll
+addEventListener('scroll',()=>{document.getElementById('hdr').classList.toggle('scrolled',scrollY>10)},{passive:true});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
