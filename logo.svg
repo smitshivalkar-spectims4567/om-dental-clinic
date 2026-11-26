@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Om Dental Clinic logo">
+  <path d="M60 28 C52 18 36 14 28 24 C20 34 22 48 28 60 C34 72 32 92 38 100 C44 108 54 104 55 92 C56 82 58 78 60 78 C62 78 64 82 65 92 C66 104 76 108 82 100 C88 92 86 72 92 60 C98 48 100 34 92 24 C84 14 68 18 60 28 Z" fill="#ffffff" stroke="#B91C1C" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="48" cy="48" rx="4.5" ry="6" fill="#B91C1C"/>
+  <ellipse cx="72" cy="48" rx="4.5" ry="6" fill="#B91C1C"/>
+</svg>

@@ -12,12 +12,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23B91C1C'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>ॐ</text></svg>">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Om Dental Clinic",
+  "logo": "https://smitshivalkar-spectims4567.github.io/om-dental-clinic/logo.svg",
   "description": "Specialist aesthetic and cosmetic dentistry and painless single-sitting root canals in Thane West. Appointments only on WhatsApp.",
   "telephone": "+91-9004079983",
   "priceRange": "₹400 - ₹8,000",
@@ -101,14 +102,14 @@ header{position:sticky;top:0;z-index:50;background:rgba(248,250,252,.92);backdro
 header.scrolled{border-bottom-color:var(--border)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.logo-mark{width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:24px;font-weight:700}
+.logo-mark{width:44px;height:44px;flex-shrink:0}
 .logo-text strong{font-family:var(--display);font-size:19px;color:var(--red);display:block;line-height:1.1}
 .logo-text span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
 .nav-links{display:flex;gap:28px;font-weight:500;font-size:15px}
 .nav-links a:hover{color:var(--red)}
 .nav-cta .btn{padding:11px 20px;font-size:14px;min-height:44px}
 @media(max-width:960px){.nav-links{display:none}}
-@media(max-width:560px){.logo-text span{display:none}.logo-text strong{font-size:17px}.logo-mark{width:38px;height:38px;font-size:21px}.nav-cta .btn{padding:10px 14px;font-size:13px;min-height:44px}.nav{height:64px}}
+@media(max-width:560px){.logo-text span{display:none}.logo-text strong{font-size:17px}.logo-mark{width:38px;height:38px}.nav-cta .btn{padding:10px 14px;font-size:13px;min-height:44px}.nav{height:64px}}
 
 /* hero */
 .hero{background:#fff;padding:clamp(48px,7vw,88px) 0 clamp(48px,6vw,72px)}
@@ -232,7 +233,7 @@ footer a{color:#F59E0B;font-weight:600}
 <header id="hdr">
   <div class="container nav">
     <a class="logo" href="#top">
-      <div class="logo-mark">ॐ</div>
+      <img class="logo-mark" src="logo.svg" alt="Om Dental Clinic logo">
       <div class="logo-text"><strong>Om Dental Clinic</strong><span>Thane West</span></div>
     </a>
     <nav class="nav-links" aria-label="Main">
