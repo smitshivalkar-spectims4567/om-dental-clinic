@@ -21,6 +21,8 @@
   "description": "Specialist aesthetic and cosmetic dentistry and painless single-sitting root canals in Thane West. Appointments only on WhatsApp.",
   "telephone": "+91-9004079983",
   "priceRange": "₹400 - ₹8,000",
+  "geo": {"@type": "GeoCoordinates", "latitude": 19.19685, "longitude": 72.9602},
+  "areaServed": "Thane West, Maharashtra",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Shop No. 3, Sai Om 'C' CHS Ltd., Louiswadi, Kajuwadi",
@@ -51,6 +53,19 @@
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Root canal treatment — wisdom teeth"}, "price": "8000", "priceCurrency": "INR"}
     ]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How much does a dental consultation cost?", "acceptedAnswer": {"@type": "Answer", "text": "A consultation at Om Dental Clinic, Thane West, costs ₹400."}},
+    {"@type": "Question", "name": "How do I book an appointment?", "acceptedAnswer": {"@type": "Answer", "text": "Appointments are only on WhatsApp: message 90040 79983. There is no phone booking."}},
+    {"@type": "Question", "name": "What are the clinic hours?", "acceptedAnswer": {"@type": "Answer", "text": "Monday to Saturday, 10:30 AM–1:30 PM and 6:00 PM–9:00 PM. Sunday emergencies by appointment."}},
+    {"@type": "Question", "name": "How much does a root canal cost?", "acceptedAnswer": {"@type": "Answer", "text": "Root canal treatment starts at ₹5,000 for front teeth, ₹6,000 for back teeth, and ₹8,000 onwards for wisdom teeth."}},
+    {"@type": "Question", "name": "Do you treat children and elderly patients?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Paediatric and geriatric care is available. Orthodontist visits, bleaching, fluoride treatment for kids and elderly specials are by prior appointment only."}}
+  ]
 }
 </script>
 <style>
@@ -145,6 +160,7 @@ header.scrolled{border-bottom-color:var(--border)}
 @media(max-width:900px){.who-grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.who-grid{grid-template-columns:1fr}}
 .who{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px}
 .who h3{font-size:21px;margin-bottom:8px}
+.faq-item{margin-top:28px}.faq-item h3{font-size:21px;margin-bottom:6px}.faq-item p{color:var(--ink2);max-width:70ch}
 .who p{font-size:15px;color:var(--ink2)}
 .who ul{list-style:none;margin-top:14px;display:grid;gap:8px;font-size:14.5px;color:var(--ink2)}
 .who li::before{content:"✓";color:var(--blue);font-weight:800;margin-right:8px}
@@ -248,9 +264,11 @@ footer a{color:#F59E0B;font-weight:600}
       <span class="eyebrow">Treatment prices</span>
       <h2>Treatment prices.</h2>
       <p class="sub">Prices given by the clinic. Tap any treatment to book it on WhatsApp — your message already names the treatment.</p>
+      <p class="sub" style="margin-top:6px">Prices updated November 2026.</p>
 
       <div class="price-group">
         <h3>Check-up &amp; cleaning <span>Start here</span></h3>
+        <p class="sub" style="margin-top:8px">Scaling is a professional cleaning that removes tartar and plaque from your teeth.</p>
         <div class="price-table">
           <div class="prow">
             <div class="t"><strong>Consultation</strong><span>Examination, X-ray evaluation and a clear treatment plan before anything begins.</span></div>
@@ -267,6 +285,7 @@ footer a{color:#F59E0B;font-weight:600}
 
       <div class="price-group">
         <h3>Fillings &amp; build-up <span>Tooth-coloured and silver</span></h3>
+        <p class="sub" style="margin-top:8px">A filling repairs a tooth damaged by decay, restoring its shape and strength.</p>
         <div class="price-table">
           <div class="prow">
             <div class="t"><strong>GIC filling</strong><span>Glass ionomer filling.</span></div>
@@ -293,6 +312,7 @@ footer a{color:#F59E0B;font-weight:600}
 
       <div class="price-group">
         <h3>Extractions <span>Tooth removal</span></h3>
+        <p class="sub" style="margin-top:8px">An extraction removes a tooth that cannot be saved.</p>
         <div class="price-table">
           <div class="prow">
             <div class="t"><strong>Simple extraction</strong><span>Straightforward tooth removal.</span></div>
@@ -314,6 +334,7 @@ footer a{color:#F59E0B;font-weight:600}
 
       <div class="price-group">
         <h3>Root canal treatment <span>Save the tooth, lose the pain</span></h3>
+        <p class="sub" style="margin-top:8px">A root canal removes the infected pulp inside a tooth and seals it, saving the tooth.</p>
         <div class="price-table">
           <div class="prow">
             <div class="t"><strong>Root canal — anterior (front teeth)</strong><span>Single-sitting, painless root canal.</span></div>
@@ -465,6 +486,33 @@ footer a{color:#F59E0B;font-weight:600}
           <iframe title="Om Dental Clinic location map" loading="lazy" allowfullscreen
             src="https://www.google.com/maps?q=Louiswadi%2C%20Kajuwadi%2C%20Thane%20West%20400604&output=embed"></iframe>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="background:#fff">
+    <div class="container">
+      <span class="eyebrow">Common questions</span>
+      <h2>Common questions.</h2>
+      <div class="faq-item">
+        <h3>How much does a dental consultation cost?</h3>
+        <p>A consultation at Om Dental Clinic, Thane West, costs ₹400.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I book an appointment?</h3>
+        <p>Appointments are only on WhatsApp: message 90040 79983. There is no phone booking.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are the clinic hours?</h3>
+        <p>Monday to Saturday, 10:30 AM–1:30 PM and 6:00 PM–9:00 PM. Sunday emergencies by appointment.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much does a root canal cost?</h3>
+        <p>Root canal treatment starts at ₹5,000 for front teeth, ₹6,000 for back teeth, and ₹8,000 onwards for wisdom teeth.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you treat children and elderly patients?</h3>
+        <p>Yes. Paediatric and geriatric care is available. Orthodontist visits, bleaching, fluoride treatment for kids and elderly specials are by prior appointment only.</p>
       </div>
     </div>
   </section>
