@@ -185,15 +185,26 @@ header.scrolled{border-bottom-color:var(--border)}
 
 /* hours */
 .hours-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:44px;max-width:760px}
-.hours-row{display:grid;grid-template-columns:130px 1fr 1fr;padding:17px 26px;border-bottom:1px solid var(--border);align-items:center;font-size:15px}
+.hours-row{display:grid;grid-template-columns:150px 1fr 1fr;gap:24px;padding:22px 28px;border-bottom:1px solid var(--border);align-items:center}
 .hours-row:last-child{border-bottom:0}
-.hours-row.head{background:var(--ink);color:#fff;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-.hours-row .day{font-weight:600}
-.hours-row.sun{background:var(--amber-soft)}
-.badge{display:inline-block;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600}
-.badge-am{background:var(--amber-soft);color:var(--amber)}
-.badge-pm{background:var(--blue-soft);color:var(--blue-dark)}
-@media(max-width:640px){.hours-row{grid-template-columns:1fr;padding:16px 20px;gap:6px}.hours-row.head{display:none}.hours-row .day{font-size:16px}.hours-row>div:nth-child(2)::before{content:"Morning: ";font-weight:600}.hours-row>div.pm{display:block}.hours-row>div.pm::before{content:"Evening: ";font-weight:600}.hours-row.sun>div:nth-child(2)::before{content:""}.hours-row.sun>div.pm::before{content:""}}
+.hours-row.head{padding:14px 28px;background:var(--bg);color:var(--ink3);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.hours-row .day{font-family:var(--display);font-size:19px;font-weight:700}
+.hours-row.open{box-shadow:inset 3px 0 var(--red)}
+.hours-row.sun{background:var(--bg)}
+.hours-row.sun .day{color:var(--ink2)}
+.time{font-family:var(--display);font-size:21px;font-weight:700;white-space:nowrap}
+.time-note{font-size:15px;font-weight:600;color:var(--ink2)}
+.closed{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--red-soft);color:var(--red-dark);font-size:13px;font-weight:700;white-space:nowrap}
+.shift-label{display:none}
+@media(max-width:640px){
+  .hours-row{grid-template-columns:1fr;gap:0;padding:20px}
+  .hours-row.head{display:none}
+  .hours-row .day{font-size:18px;margin-bottom:10px}
+  .shift{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0}
+  .shift + .shift{border-top:1px solid var(--border)}
+  .shift-label{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+  .time{font-size:19px}
+}
 
 /* contact */
 .contact{background:var(--ink);color:#fff}
@@ -456,9 +467,9 @@ footer a{color:#F59E0B;font-weight:600}
       <h2>Open six days. Morning &amp; evening.</h2>
       <p class="sub">Double-shift timings built for working professionals. Appointments only on WhatsApp — please do not walk in without one.</p>
       <div class="hours-card">
-        <div class="hours-row head"><div>Day</div><div>Morning</div><div class="pm">Evening</div></div>
-        <div class="hours-row"><div class="day">Mon – Sat</div><div><span class="badge badge-am">10:30 AM – 1:30 PM</span></div><div class="pm"><span class="badge badge-pm">4:00 PM – 8:00 PM</span></div></div>
-        <div class="hours-row sun"><div class="day">Sunday</div><div><span class="badge badge-am">Closed for regular OPD</span></div><div class="pm"><span class="badge badge-pm">Emergencies by appointment</span></div></div>
+        <div class="hours-row head"><div>Day</div><div>Morning</div><div>Evening</div></div>
+        <div class="hours-row open"><div class="day">Mon – Sat</div><div class="shift"><span class="shift-label">Morning</span><span class="time">10:30 AM – 1:30 PM</span></div><div class="shift"><span class="shift-label">Evening</span><span class="time">4:00 PM – 8:00 PM</span></div></div>
+        <div class="hours-row sun"><div class="day">Sunday</div><div class="shift"><span class="shift-label">Regular OPD</span><span class="closed">Closed</span></div><div class="shift"><span class="shift-label">Emergencies</span><span class="time-note">By appointment</span></div></div>
       </div>
     </div>
   </section>
